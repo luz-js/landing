@@ -1,0 +1,337 @@
+:root{
+    --textoLetra: 'Source Code Pro', monospace;
+    --botonesLetra: 'Open Sans', sans-serif;
+    --titulos:'Montserrat', sans-serif;
+    --primaryColor: #4d908e;
+    --secondaryColor: #f4a261;
+    --tercerColor: #f9c74f;
+    --background: #f8f9fa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/****** NAVEGADOR(MENU) ******/
+.nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.nav-left{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5vh;
+    background-color: var(--primaryColor);
+}
+
+.nav-left a{
+    padding-right: 5vw;
+    color: var(--background);
+}
+
+.nav-right a{
+    color: var(--primaryColor);
+}
+
+.nav-left a:hover, .nav-right a:hover{
+    color: var(--tercerColor);
+}
+
+.nav-left a, .nav-right a{
+    font-size: 1.8vw;
+    text-decoration: none;
+    font-family: var(--titulos);
+    transition: all 0.3s;
+}
+
+.nav-right{
+    width: 30%;
+    height: 100%;
+    padding-top: 5vh;
+    text-align: center;
+    background-color: var(--background);
+}
+
+/****** PRIMERA VISTA ******/
+.primera-vista{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.primeraVista-left{
+    width: 70%;
+    height: 100%;
+    padding-left: 8.3vw;
+    padding-top: 5vh;
+    border-bottom-right-radius: 100px;
+    background-color: var(--primaryColor);
+}
+
+.primeraVista-right{
+    background-color: var(--tercerColor);
+    width: 41%;
+    height: 75%;
+    margin-left: 58.3vw;
+    border-top-left-radius: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+.primeraVista-left h1{
+    font-size: 4vw;
+    font-family: var(--titulos);
+    color: var(--background);
+    margin-bottom: 16vh;
+}
+
+.textoPequeno{
+    width: 36vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16vh;
+}
+
+.textoPequeno p{
+    font-size: 1.5vw;
+    font-family: var(--textoLetra);
+    color: var(--background);
+    line-height: 5vh;
+}
+
+.ralla{
+    background-color: var(--tercerColor);
+    width: 8.8vw;
+    height: 0.7vh;
+    margin-right: 1vw;
+}
+
+.btn-primeraVista input{
+    width: 12vw;
+    height: 7vh;
+    margin-right: 3vw;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4vw;
+    color: var(--background);
+    background-color: var(--tercerColor);
+}
+
+/****** SEGUNDA VISTA ******/
+.segunda-vista{
+    background-color: var(--background);
+    padding: 10vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.titulos-segundaVista{
+    padding-bottom: 5vh;
+}
+
+.titulos-segundaVista h1{
+    font-size: 1.2vw;
+    font-family: var(--botonesLetra);
+    color: var(--primaryColor);
+}
+
+.titulos-segundaVista h2{
+    font-size: 2vw;
+    font-family: var(--botonesLetra);
+}
+
+.contenedor-imagenes{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenedor-imagenes h1{
+    position: absolute;
+    width: 18vw;
+    height: 8vh;
+    margin-top: -5vh;
+    font-size: 1.3vw;
+    text-align: center;
+    padding: 2.3vh;
+    background-color: var(--background);
+    box-shadow: 8px 8px 8px #91909062;
+    transition: all 0.5s;
+}
+
+/****** TERCERA VISTA ******/
+.tercera-vista{
+    background-color: darkgoldenrod;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: var(--background);
+}
+
+.titulos-terceraVista h1{
+    font-size: 1.2vw;
+    font-family: var(--botonesLetra);
+    color: var(--primaryColor);
+}
+
+.titulos-terceraVista h2{
+    font-size: 2vw;
+    font-family: var(--botonesLetra);
+}
+
+.comentario{
+    width: 100%;
+    height: 60%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f1f2f3;
+    border-radius: 1%;
+}
+
+.texto-comentario{
+    font-size: 2.3vw;
+    text-align: left;
+    line-height: 10vh;
+    font-family: var(--textoLetra);
+    color: #363636;
+    transition: all 0.5s;
+}
+
+.usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.datos-comentario{
+    font-family: var(--textoLetra   );
+}
+.datos-comentario p{
+    color: var(--primaryColor);
+}
+.datos-comentario h1{
+    font-size: 2vw;
+    color: #202020;
+}
+
+/****** CUARTA VISTA ******/
+.cuarta-vista{
+    background-color: var(--background);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.cuartaVista-left, .cuartaVista-right{
+    width: 50%;
+}
+
+.cuartaVista-right h1, h3{
+    font-size: 1.2vw;
+    font-family: var(--botonesLetra);
+    color: var(--primaryColor);
+    margin-bottom: 5vh;
+}
+
+.cuartaVista-right h2{
+    font-size: 2vw;
+    line-height: 7vh;
+    font-family: var(--botonesLetra);
+    margin-bottom: 5vh;
+}
+
+.parrafo{
+    width: 70%;
+}
+
+.parrafo p{
+    font-size: 1.1vw;
+    line-height: 3vh;
+    font-family: var(--textoLetra);
+    margin-bottom: 2vh;
+}
+
+.btn-join{
+    width: 12vw;
+    height: 7vh;
+    margin-top: 7vh;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.3vw;
+    color: var(--background);
+    background-color: var(--tercerColor);
+}
+
+.caja-azul{
+    width: 35vw;
+    height: 65vh;
+    background-color: var(--primaryColor);
+}
+
+.caja-amarilla{
+    width: 35vw;
+    height: 65vh;
+    margin: auto;
+    margin-top: -50vh;
+    background-color: var(--tercerColor);
+    border-top-left-radius: 100px;
+}
+
+/****** FOOTER ******/
+
+/****** IMAGENES ******/
+.segunda-vista .img1, .img2, .img3{
+    width: 25vw;
+    height: 70vh;
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+}
+.img1{
+    background-image: url("../imagenes/img1.jpeg");
+}
+.img2{
+    background-image: url("../imagenes/img2.jpeg");
+}
+.img3{
+    background-image: url("../imagenes/img3.jpeg");
+}
+
+.img4{
+    width: 5vw;
+    height: 12vh;
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../imagenes/user.jpeg");
+    border-radius: 100px;
+    margin-right: 2vw;
+    box-shadow: 10px 10px 10px #8b8b8b62;
+}
