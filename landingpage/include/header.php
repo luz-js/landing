@@ -13,14 +13,17 @@
 <body>
     <header>
         <div class="nav">
+
             <div class="nav-left">
                 <a href="#">GoFinance</a>
                 <a href="#">Home</a>
                 <a href="#">Solution</a>
                 <a href="#">About us</a>
             </div>
+
             <div class="nav-right">
                 <a href="tel:+8494052758">Call us: 849-405-2758</a>
             </div>
+            
         </div>
     </header>

@@ -342,12 +342,14 @@
 .gofinance h1, .services h1, .reach-us h1, .account h1{
   color: var(--tercerColor);
   font-family: var(--titulos);
+  letter-spacing: 2px;
 }
 
 .gofinance a, .services a, .reach-us a, .account a{
   color: white;
   margin-top: 5vh;
   text-decoration: none;
+  letter-spacing: 2px;
   font-family: var(--textoLetra);
 }
 
@@ -365,6 +367,7 @@
   color: var(--tercerColor);
   font-size: 2vw;
   font-family: var(--titulos);
+  letter-spacing: 2px;
 }
 
 .footer-bottom img{
