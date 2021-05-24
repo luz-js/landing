@@ -77,7 +77,7 @@
         <div class="caja-azul">
             <!-- DISENO -->
         </div>
-        <div class="caja-amarilla">
+        <div class="caja-foto">
             <!-- DISENO -->
         </div>
     </div>

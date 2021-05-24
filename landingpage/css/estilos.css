@@ -1,10 +1,12 @@
 :root{
-    --textoLetra: 'Source Code Pro', monospace;
-    --botonesLetra: 'Open Sans', sans-serif;
-    --titulos:'Montserrat', sans-serif;
+    --textoLetra:'Roboto', sans-serif;
+    --botonesLetra:'Raleway', sans-serif;;
+    --titulos:'Open Sans', sans-serif;
     --primaryColor: #4d908e;
     --secondaryColor: #f4a261;
     --tercerColor: #f9c74f;
+    --cuartoColor: #001219;
+    --colorTexto: #363636;
     --background: #f8f9fa;
 }
 
@@ -79,7 +81,9 @@
 }
 
 .primeraVista-right{
-    background-color: var(--tercerColor);
+    background-image: url("../imagenes/equipo.jpeg");
+    background-position: center;
+    background-size: cover;
     width: 41%;
     height: 75%;
     margin-left: 58.3vw;
@@ -170,9 +174,11 @@
     height: 8vh;
     margin-top: -5vh;
     font-size: 1.3vw;
+    font-family: var(--textoLetra);
     text-align: center;
     padding: 2.3vh;
     background-color: var(--background);
+    color: var(--colorTexto);
     box-shadow: 8px 8px 8px #91909062;
     transition: all 0.5s;
 }
@@ -219,7 +225,7 @@
     text-align: left;
     line-height: 10vh;
     font-family: var(--textoLetra);
-    color: #363636;
+    color: var(--colorTexto);
     transition: all 0.5s;
 }
 
@@ -273,8 +279,10 @@
 
 .parrafo p{
     font-size: 1.1vw;
-    line-height: 3vh;
+    line-height: 3.1vh;
+    letter-spacing: 1.5px;
     font-family: var(--textoLetra);
+    color: var(--colorTexto);
     margin-bottom: 2vh;
 }
 
@@ -295,16 +303,75 @@
     background-color: var(--primaryColor);
 }
 
-.caja-amarilla{
+.caja-foto{
     width: 35vw;
     height: 65vh;
     margin: auto;
     margin-top: -50vh;
-    background-color: var(--tercerColor);
+    background-image: url("../imagenes/equipo2.jpeg");
+    background-position: center;
+    background-size: cover;
     border-top-left-radius: 100px;
 }
 
 /****** FOOTER ******/
+
+.footer{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cuartoColor);
+}
+
+.footer-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+}
+
+.gofinance, .services, .reach-us, .account{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.gofinance h1, .services h1, .reach-us h1, .account h1{
+  color: var(--tercerColor);
+  font-family: var(--titulos);
+}
+
+.gofinance a, .services a, .reach-us a, .account a{
+  color: white;
+  margin-top: 5vh;
+  text-decoration: none;
+  font-family: var(--textoLetra);
+}
+
+.footer-bottom{
+  width: 85%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--background);
+}
+
+.footer-bottom p{
+  color: var(--tercerColor);
+  font-size: 2vw;
+  font-family: var(--titulos);
+}
+
+.footer-bottom img{
+  width: 4vw;
+  height: 4vh
+}
+
 
 /****** IMAGENES ******/
 .segunda-vista .img1, .img2, .img3{

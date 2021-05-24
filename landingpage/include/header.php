@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Open+Sans:wght@600;200&family=Source+Code+Pro:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Document</title>
 </head>
